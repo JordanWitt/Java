@@ -40,7 +40,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MultiDemensionalArrays">
+  <component name="RunManager" selected="Application.Constants">
     <configuration name="Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Arrays" />
       <module name="Java" />
@@ -54,8 +54,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaTypes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.JavaTypes" />
+    <configuration name="Constants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Constants" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -67,8 +67,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+    <configuration name="JavaTypes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.JavaTypes" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -108,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Constants" />
         <item itemvalue="Application.MultiDemensionalArrays" />
         <item itemvalue="Application.Arrays" />
         <item itemvalue="Application.Strings" />
         <item itemvalue="Application.JavaTypes" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
