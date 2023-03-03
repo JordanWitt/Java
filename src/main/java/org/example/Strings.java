@@ -8,5 +8,13 @@ public class Strings {
         System.out.println(myName.indexOf("o" + "e")); //logs -1 because e doesn't exist
         System.out.println(myName.replace("J", "B"));
         //replaces J with B
+        //target and replacement are the parameters and "J" and "B" are the arguments
+        //replace doesn't modify the original string it creates a new one
+        System.out.println(myName);
+        myName = myName.replace("J", "B");
+        System.out.println(myName);
+        System.out.println(myName.trim());
+        System.out.println(myName.toLowerCase()); //converts all lower case
+        System.out.println(myName.toUpperCase()); //all upper case
     }
 }
