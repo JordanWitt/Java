@@ -1,4 +1,5 @@
 package org.example;//always terminate statement with semicolon
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) { //void means it will not return a value
@@ -28,7 +29,12 @@ public class Main {
         boolean isValidated = false;
         //all above are reserved keywords
 
+        Date now = new Date(); //new instance of the onject
+        System.out.println(now);
 
+        for (byte i = 0; i < ageTwo; i++) {
+            System.out.println(ageTwo); //prints ageTwo 28 times
 
+        }
     }
 }
