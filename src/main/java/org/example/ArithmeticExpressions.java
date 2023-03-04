@@ -12,5 +12,7 @@ public class ArithmeticExpressions {
         int x = 1;
         x += 2; //+= augmented assignment operator/ or compound
         System.out.println(x);
+        int q = 10 + 3 * 2;
+        System.out.println(q);
     }
 }
