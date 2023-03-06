@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FormattingNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ReadingInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MathClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MathClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MathClass">
+  <component name="RunManager" selected="Application.ReadingInput">
     <configuration name="ArithmeticExpressions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ArithmeticExpressions" />
       <module name="Java" />
@@ -67,8 +68,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Constants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Constants" />
+    <configuration name="FormattingNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.FormattingNumbers" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiDemensionalArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.MultiDemensionalArrays" />
+    <configuration name="ReadingInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ReadingInput" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -108,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadingInput" />
+        <item itemvalue="Application.FormattingNumbers" />
         <item itemvalue="Application.MathClass" />
         <item itemvalue="Application.Casting" />
         <item itemvalue="Application.ArithmeticExpressions" />
-        <item itemvalue="Application.Constants" />
-        <item itemvalue="Application.MultiDemensionalArrays" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677876222469</updated>
-      <workItem from="1677876223872" duration="8700000" />
+      <workItem from="1677876223872" duration="12041000" />
     </task>
     <servers />
   </component>
