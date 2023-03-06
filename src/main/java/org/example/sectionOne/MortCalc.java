@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sectionOne;
 import java.text.NumberFormat;
 import java.util.Scanner;
 

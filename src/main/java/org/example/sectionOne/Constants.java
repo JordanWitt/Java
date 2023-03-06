@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sectionOne;
 
 public class Constants {
     public static void main(String[] args) {

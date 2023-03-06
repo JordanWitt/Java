@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sectionOne;
 
 public class MathClass {
     public static void main(String[] args) {

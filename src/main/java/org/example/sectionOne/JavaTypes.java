@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sectionOne;
 import java.awt.*;
 public class JavaTypes {
     public static void main(String[] args) {

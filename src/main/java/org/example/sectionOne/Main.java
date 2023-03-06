@@ -1,4 +1,4 @@
-package org.example;//always terminate statement with semicolon
+package org.example.sectionOne;//always terminate statement with semicolon
 import java.util.Date;
 
 public class Main {
