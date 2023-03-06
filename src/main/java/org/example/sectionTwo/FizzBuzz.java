@@ -17,3 +17,4 @@ public class FizzBuzz {
             System.out.println("Can't compile " + number);
     }
 }
+//most specific conditions needs to be on the top
