@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/TernaryOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/SwitchStatements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TernaryOperator">
+  <component name="RunManager" selected="Application.SwitchStatements">
     <configuration name="ControlFlow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.ControlFlow" />
       <module name="Java" />
@@ -67,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MortCalc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionOne.MortCalc" />
+    <configuration name="SimplifyingIfStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.SimplifyingIfStatements" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.sectionOne.*" />
+          <option name="PATTERN" value="org.example.sectionTwo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimplifyingIfStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.SimplifyingIfStatements" />
+    <configuration name="SwitchStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.SwitchStatements" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -108,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SwitchStatements" />
         <item itemvalue="Application.TernaryOperator" />
         <item itemvalue="Application.SimplifyingIfStatements" />
         <item itemvalue="Application.IfStatements" />
         <item itemvalue="Application.ControlFlow" />
-        <item itemvalue="Application.MortCalc" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677876222469</updated>
-      <workItem from="1677876223872" duration="16215000" />
+      <workItem from="1677876223872" duration="17065000" />
     </task>
     <servers />
   </component>
