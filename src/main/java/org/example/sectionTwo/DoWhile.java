@@ -11,5 +11,6 @@ public class DoWhile {
             input = scanner.next().toLowerCase();
         }while (!input.equals("quit"));
     }// do while loops will get executed at least once  even if the condition is false
+    //do while are rarely used but have certain cases, whle is used more
 }
 

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/WhileLoops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/ForLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/ForLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/BreakContinue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/DoWhile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionTwo/DoWhile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,20 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DoWhile">
+  <component name="RunManager" selected="Application.BreakContinue">
+    <configuration name="BreakContinue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.BreakContinue" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.sectionTwo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DoWhile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.DoWhile" />
       <module name="Java" />
@@ -82,19 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwitchStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.SwitchStatements" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.sectionTwo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WhileLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionTwo.WhileLoops" />
       <module name="Java" />
@@ -110,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BreakContinue" />
         <item itemvalue="Application.DoWhile" />
         <item itemvalue="Application.WhileLoops" />
         <item itemvalue="Application.ForLoop" />
         <item itemvalue="Application.FizzBuzz" />
-        <item itemvalue="Application.SwitchStatements" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677876222469</updated>
-      <workItem from="1677876223872" duration="19580000" />
+      <workItem from="1677876223872" duration="20526000" />
     </task>
     <servers />
   </component>
