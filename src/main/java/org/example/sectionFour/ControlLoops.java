@@ -14,5 +14,20 @@ public class ControlLoops {
             System.out.println("goodbye");
         }else
             System.out.println("continue");
+//Switch case example(shorthand)
+        int caseSwitch = 1;
+
+        switch (caseSwitch) {
+            case 1:
+                System.out.println("Case 1");
+                // Fall through!
+            case 2:
+                System.out.println("Case 2");
+                break;
+            default:
+                System.out.println("Default case");
+                break;
+        }
+
     }
 }
