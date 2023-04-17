@@ -61,13 +61,27 @@ public class ScannerExample {
 //
 //        scanner.close(); // Close the scanner after use
 
-        System.out.println("Enter a sentence:");
-        String sentence = scanner.nextLine(); // Read the input sentence
+//        System.out.println("Enter a sentence:");
+//        String sentence = scanner.nextLine(); // Read the input sentence
+//
+//        System.out.println("You entered:");
+//        System.out.println(sentence.trim()); // Display the input sentence without leading/trailing whitespaces
+//
+//        scanner.close(); // Close the scanner after use
+
+        System.out.println("Enter 2 numbers to calculate the area");
+        System.out.println("number 1:");
+        int firstNumber = scanner.nextInt();
+
+        System.out.println("number 2:");
+        int secondNumber = scanner.nextInt();
 
         System.out.println("You entered:");
-        System.out.println(sentence.trim()); // Display the input sentence without leading/trailing whitespaces
+        System.out.println(firstNumber);
+        System.out.println(secondNumber);
 
-        scanner.close(); // Close the scanner after use
+        System.out.println("Here is the area of your two numbers:");
+        System.out.println(firstNumber * secondNumber);
     }
 }
 
