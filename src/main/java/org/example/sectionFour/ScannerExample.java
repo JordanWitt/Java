@@ -71,10 +71,10 @@ public class ScannerExample {
 
         System.out.println("Enter 2 numbers to calculate the area");
         System.out.println("number 1:");
-        int firstNumber = scanner.nextInt();
+        double firstNumber = scanner.nextDouble();
 
         System.out.println("number 2:");
-        int secondNumber = scanner.nextInt();
+        double secondNumber = scanner.nextDouble();
 
         System.out.println("You entered:");
         System.out.println(firstNumber);
