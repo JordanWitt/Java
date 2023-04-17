@@ -43,21 +43,29 @@ public class ScannerExample {
 //        }
 //        scanner.close(); // Close the scanner after use
 //    }
-        System.out.println("Enter three words:");
+//        System.out.println("Enter three words:");
+//
+//        System.out.print("Word 1: ");
+//        String word1 = scanner.nextLine(); // Read first word
+//
+//        System.out.print("Word 2: ");
+//        String word2 = scanner.nextLine(); // Read second word
+//
+//        System.out.print("Word 3: ");
+//        String word3 = scanner.nextLine(); // Read third word
+//
+//        System.out.println("You entered:");
+//        System.out.println(word1); // Display first word on a new line
+//        System.out.println(word2); // Display second word on a new line
+//        System.out.println(word3); // Display third word on a new line
+//
+//        scanner.close(); // Close the scanner after use
 
-        System.out.print("Word 1: ");
-        String word1 = scanner.nextLine(); // Read first word
-
-        System.out.print("Word 2: ");
-        String word2 = scanner.nextLine(); // Read second word
-
-        System.out.print("Word 3: ");
-        String word3 = scanner.nextLine(); // Read third word
+        System.out.println("Enter a sentence:");
+        String sentence = scanner.nextLine(); // Read the input sentence
 
         System.out.println("You entered:");
-        System.out.println(word1); // Display first word on a new line
-        System.out.println(word2); // Display second word on a new line
-        System.out.println(word3); // Display third word on a new line
+        System.out.println(sentence.trim()); // Display the input sentence without leading/trailing whitespaces
 
         scanner.close(); // Close the scanner after use
     }
