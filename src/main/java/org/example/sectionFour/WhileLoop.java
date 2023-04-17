@@ -11,6 +11,13 @@ public class WhileLoop {
         do{
             System.out.println(num);
             num += 2;
-        }while (num <=100);
+        }while (100 >= num);
+        System.out.println("----------NEXT------------");
+        int nums = 100;
+        // Do-while loop
+        do {
+            System.out.println(nums);
+            nums -= 5;
+        } while (nums >= -10);
     }
 }
