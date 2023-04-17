@@ -82,6 +82,8 @@ public class ScannerExample {
 
         System.out.println("Here is the area of your two numbers:");
         System.out.println(firstNumber * secondNumber);
+        System.out.println("Here is the perimeter of your two numbers:");
+        System.out.println(firstNumber + firstNumber + secondNumber + secondNumber);
     }
 }
 
