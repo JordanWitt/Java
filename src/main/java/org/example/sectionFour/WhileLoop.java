@@ -37,5 +37,6 @@ public class WhileLoop {
             System.out.println(square); // display square
             n = square; // update num with square value
         } while (n > 0 && n < limit); // repeat until num is less than limit
+
     }
 }

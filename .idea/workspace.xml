@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/FizzBuzz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/WhileLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/WhileLoop.java" afterDir="false" />
     </list>
@@ -46,7 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.WhileLoop">
+  <component name="RunManager" selected="Application.FizzBuzz">
     <configuration name="ConsoleIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.ConsoleIO" />
       <module name="Java" />
@@ -73,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.JavaTwo" />
+    <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.FizzBuzz" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FizzBuzz" />
         <item itemvalue="Application.WhileLoop" />
         <item itemvalue="Application.ControlLoops" />
         <item itemvalue="Application.ScannerExample" />
         <item itemvalue="Application.ConsoleIO" />
-        <item itemvalue="Application.JavaTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +135,7 @@
       <workItem from="1679850146652" duration="673000" />
       <workItem from="1681686420670" duration="4208000" />
       <workItem from="1681741414568" duration="14000" />
-      <workItem from="1681746447985" duration="11011000" />
+      <workItem from="1681746447985" duration="12592000" />
     </task>
     <servers />
   </component>
