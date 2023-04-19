@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/GradeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/StringBasics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,20 +46,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.GradeApplication">
-    <configuration name="ControlLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.ControlLoops" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.sectionFour.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.StringBasics">
     <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.FizzBuzz" />
       <module name="Java" />
@@ -75,6 +62,19 @@
     </configuration>
     <configuration name="GradeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.GradeApplication" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.sectionFour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.StringBasics" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringBasics" />
         <item itemvalue="Application.GradeApplication" />
         <item itemvalue="Application.Table" />
         <item itemvalue="Application.FizzBuzz" />
         <item itemvalue="Application.WhileLoop" />
-        <item itemvalue="Application.ControlLoops" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +134,7 @@
       <workItem from="1679850146652" duration="673000" />
       <workItem from="1681686420670" duration="4208000" />
       <workItem from="1681741414568" duration="14000" />
-      <workItem from="1681746447985" duration="16572000" />
+      <workItem from="1681746447985" duration="18606000" />
     </task>
     <servers />
   </component>
