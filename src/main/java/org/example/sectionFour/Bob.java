@@ -17,13 +17,13 @@ public class Bob {
             System.out.println(userResponse);
 
             if (userResponse.endsWith("?")) {
-                System.out.println(casualResponse);
+                System.out.println("Bob: " + casualResponse);
             } else if (userResponse.endsWith("!")) {
-                System.out.println(aggressiveResponse);
+                System.out.println("Bob: " + aggressiveResponse);
             } else if (userResponse.isEmpty()) {
-                System.out.println(fineResponse);
+                System.out.println("Bob: " + fineResponse);
             } else
-                System.out.println(psshhResponse);
+                System.out.println("Bob: " + psshhResponse);
             System.out.println("Would you like to go again? (Y/N)");
             userResponse = scanner.nextLine();
             if(!userResponse.equalsIgnoreCase("Y")){
