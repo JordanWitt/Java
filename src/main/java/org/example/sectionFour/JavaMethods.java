@@ -10,10 +10,20 @@ public class JavaMethods {
     public static String shout(String s) {
         return s.toUpperCase() + "!!!";
     }
+//
+    public static void count(int n) {
+        if (n <= 0) {
+            System.out.println("All done!");
+            return;
+        }
+        System.out.println(n);
+        count(n - 1);
+    }
 
     public static void main(String[] args) {
         System.out.println(sayHello("Jordan"));
         System.out.println(returnThree());
         System.out.println(shout("ahhhhh"));
+        count(5);
     }
 }
