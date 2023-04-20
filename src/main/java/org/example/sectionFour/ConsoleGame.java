@@ -126,8 +126,9 @@ public class ConsoleGame {
                 System.out.println("Prepare for battle");
                 attempt++;
                 continue GAME;
-            }else
+            }else {
                 System.out.println("Goodbye");
+            }
             break;
         }
         System.out.println("###################################################################");
