@@ -1,6 +1,5 @@
 package org.example.sectionFour;
 
-import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -22,6 +21,7 @@ public class ConsoleGame {
 
         //base items/mechanics
         int recall = 50; //restores base health
+        int enemyRecall = 45;
         int item = 10; //adds 10 dmg
         int critChance = 5; //critical chance every 3 hits
         int armour = 5; //armour for the tank champs
@@ -49,12 +49,14 @@ public class ConsoleGame {
 
             while (enemyMaxHealth > 0) { // iteration of attacks/player options
                 System.out.println("\tYour HP: " + player); //player health
+                System.out.println("\tYour Damage: " + playerDamage);
                 if(enemy.equals("Sion")||enemy.equals("Riven")){
                     enemyMaxHealth += armour;
                 } else if (enemy.equals("Draven")|| enemy.equals("Kled")) {
                     enemyAttackDamage += lifeSteal;
                 }
-                System.out.println("\t" + enemy + "'s HP: " + enemyMaxHealth); //e health
+                System.out.println("\t" + enemy + "'s HP: " + enemyMaxHealth); //enemy health
+                System.out.println("\tEnemy Damage: " + enemyAttackDamage);
                 System.out.println("\n\tWhat would you like to do?");
                 System.out.println("\t1 Attack");
                 System.out.println("\t2 recall");
@@ -65,6 +67,11 @@ public class ConsoleGame {
                     enemyMaxHealth -= playerDamage; //enemy loss
                     player -= enemyAttackDamage; //losing health
 
+                    numAttacks++;
+                    if(numAttacks % 3 ==0 && recalled){
+                        playerDamage *= 2;
+                        System.out.println("\tCRITICAL STRIKE");
+                    }
                     System.out.println("\t You strike the " + enemy + " for " + playerDamage + " damage");
                     System.out.println("\t You receive " + enemyAttackDamage + " in retaliation!");
 
@@ -73,13 +80,22 @@ public class ConsoleGame {
                         break;
                     }
                 } else if (input.equals("2")) {
-                    player += recall;
-                    playerDamage += (lifeSteal + critChance);
+                    recalled = true; //checks that the player recalled
+                    player += recall; //gaining health
+                    playerDamage += (lifeSteal + critChance + item);
                     //enemy
-                    enemyMaxHealth += recall;
-                    enemyAttackDamage += (critChance + item);
+                    enemyMaxHealth += enemyRecall;
+                    enemyAttackDamage += (lifeSteal + critChance + item);
+                }else if(input.equals("3")){
+                    System.out.println("Would you like to surrender? (Y/N)");
+                    input = scanner.nextLine();
+                    if(!input.equalsIgnoreCase("N")){
+                        System.out.println("DEFEAT");
+                    }else
+                        System.out.println("TIP: recalling restores 30 HP in game");
                 }
             }
         }
+        //end of while loop
     }
 }
