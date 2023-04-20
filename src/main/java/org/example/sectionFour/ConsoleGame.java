@@ -18,6 +18,7 @@ public class ConsoleGame {
 
         //turret
         int turret = 50;
+        int numAttacks = 0;
 
         //base items/mechanics
         int recall = 50; //restores base health
@@ -28,6 +29,7 @@ public class ConsoleGame {
 
         boolean running = true;
         boolean minionsSpawned = false;
+        boolean recalled = false;
 
         System.out.println("-----WELCOME TO SUMMONERS RIFT-----");
         GAME:
@@ -60,8 +62,22 @@ public class ConsoleGame {
 
                 String input = scanner.nextLine();
                 if(input.equals("1")){
-                    enemyMaxHealth -= enemyAttackDamage;
-                    player -= enemyAttackDamage; //health goes down
+                    enemyMaxHealth -= playerDamage; //enemy loss
+                    player -= enemyAttackDamage; //losing health
+
+                    System.out.println("\t You strike the " + enemy + " for " + playerDamage + " damage");
+                    System.out.println("\t You receive " + enemyAttackDamage + " in retaliation!");
+
+                    if(player <= 1) {
+                        System.out.println("\t DEFEAT");
+                        break;
+                    }
+                } else if (input.equals("2")) {
+                    player += recall;
+                    playerDamage += (lifeSteal + critChance);
+                    //enemy
+                    enemyMaxHealth += recall;
+                    enemyAttackDamage += (critChance + item);
                 }
             }
         }
