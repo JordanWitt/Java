@@ -72,6 +72,10 @@ public class ConsoleGame {
                         playerDamage *= 2;
                         System.out.println("\tCRITICAL STRIKE");
                     }
+                    if(enemy.equals("Draven") && recalled){
+                        enemyAttackDamage *= 2;
+                        System.out.println("Draven critical chance increase: " + enemyAttackDamage);
+                    }
                     System.out.println("\t You strike the " + enemy + " for " + playerDamage + " damage");
                     System.out.println("\t You receive " + enemyAttackDamage + " in retaliation!");
 
