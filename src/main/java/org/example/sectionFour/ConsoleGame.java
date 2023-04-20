@@ -12,7 +12,7 @@ public class ConsoleGame {
         int playerDamage = 30;
         //enemy base stats
         String[] enemies = {"Draven", "Sion", "Kled", "Riven"};
-        int enemyMaxHealth = 75;
+        int enemyMaxHealth = 85;
         int enemyAttackDamage = 25;
 
         //turret
@@ -26,6 +26,7 @@ public class ConsoleGame {
         int critChance = 5; //critical chance every 3 hits
         int armour = 5; //armour for the tank champs
         int lifeSteal = 5; //life-steal
+        int magicResist = 5;
 
         boolean running = true;
         boolean minionsSpawned = false;
@@ -51,7 +52,7 @@ public class ConsoleGame {
                 System.out.println("\tYour HP: " + player); //player health
                 System.out.println("\tYour Damage: " + playerDamage);
                 if(enemy.equals("Sion")||enemy.equals("Riven")){
-                    enemyMaxHealth += armour;
+                    enemyMaxHealth += (armour + magicResist);
                 } else if (enemy.equals("Draven")|| enemy.equals("Kled")) {
                     enemyAttackDamage += lifeSteal;
                 }
@@ -72,15 +73,14 @@ public class ConsoleGame {
                         playerDamage *= 2;
                         System.out.println("\tCRITICAL STRIKE");
                     }
-                    if(enemy.equals("Draven") && recalled){
-                        enemyAttackDamage *= 2;
+                    if(numAttacks % 3 == 0 && enemy.equals("Draven")){
+                        critChance *= 2;
                         System.out.println("Draven critical chance increase: " + enemyAttackDamage);
                     }
                     System.out.println("\t You strike the " + enemy + " for " + playerDamage + " damage");
-                    System.out.println("\t You receive " + enemyAttackDamage + " in retaliation!");
+                    System.out.println("\t You took " + enemyAttackDamage + " damage");
 
                     if(player <= 1) {
-                        System.out.println("\t DEFEAT");
                         break;
                     }
                 } else if (input.equals("2")) {
@@ -100,7 +100,20 @@ public class ConsoleGame {
                     }else
                         System.out.println("Continue on");
                 }
+            }if (player < 1){
+                System.out.println("DEFEAT");
+                break;
             }
+            System.out.println("------------------------------------------------------");
+            System.out.println(" # " + enemy + " was defeated! # ");
+            System.out.println(" # You have " + player + " HP left. # " );
+
+            System.out.println("------------------------------------------------------");
+            System.out.println("VICTORY");
+            System.out.println("Play Again?");
+            System.out.println("1: Continue");
+            System.out.println("2: Exit");
+
         }
         //end of while loop
     }
