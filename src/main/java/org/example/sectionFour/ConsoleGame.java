@@ -91,8 +91,10 @@ public class ConsoleGame {
                     input = scanner.nextLine();
                     if(!input.equalsIgnoreCase("N")){
                         System.out.println("DEFEAT");
-                    }else
+                    }else if (player < 1) {
                         System.out.println("TIP: recalling restores 30 HP in game");
+                    }else
+                        System.out.println("Continue on");
                 }
             }
         }
