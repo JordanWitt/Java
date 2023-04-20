@@ -12,21 +12,22 @@ public class ConsoleGame {
         int playerDamage = 30;
         //enemy base stats
         String[] enemies = {"Draven", "Sion", "Kled", "Riven"};
-        int enemyMaxHealth = 85;
+        int enemyMaxHealth = 75;
         int enemyAttackDamage = 25;
 
         //turret
         int turret = 50;
-        int numAttacks = 0;
+        int numAttacks = 0; //not being used
 
         //base items/mechanics
-        int recall = 50; //restores base health
+        int recall = 60; //restores base health
         int enemyRecall = 45;
         int item = 10; //adds 10 dmg
         int critChance = 5; //critical chance every 3 hits
-        int armour = 5; //armour for the tank champs
-        int lifeSteal = 5; //life-steal
-        int magicResist = 5;
+        int armour = 2; //armour for the tank champs
+        int lifeSteal = 2; //life-steal
+        int magicResist = 2;
+        int attempt = 1;
 
         boolean running = true;
         boolean minionsSpawned = false;
@@ -86,7 +87,7 @@ public class ConsoleGame {
                 } else if (input.equals("2")) {
                     recalled = true; //checks that the player recalled
                     player += recall; //gaining health
-                    playerDamage += (lifeSteal + critChance + item);
+                    playerDamage += (lifeSteal + critChance * 2 + item);
                     //enemy
                     enemyMaxHealth += enemyRecall;
                     enemyAttackDamage += (lifeSteal + critChance + item);
@@ -95,6 +96,8 @@ public class ConsoleGame {
                     input = scanner.nextLine();
                     if(!input.equalsIgnoreCase("N")){
                         System.out.println("DEFEAT");
+                        running = false;
+                        break;
                     }else if (player < 1) {
                         System.out.println("TIP: recalling restores 30 HP in game");
                     }else
@@ -114,7 +117,21 @@ public class ConsoleGame {
             System.out.println("1: Continue");
             System.out.println("2: Exit");
 
+            String input = scanner.nextLine();
+            while(!input.equals("1") && !input.equals("2")) {
+                System.out.println("Invalid command");
+                input = scanner.nextLine();
+            }
+            if (input.equals("1")){
+                System.out.println("Prepare for battle");
+                attempt++;
+                continue GAME;
+            }else
+                System.out.println("Goodbye");
+            break;
         }
-        //end of while loop
+        System.out.println("###################################################################");
+        System.out.println("# Thank you for playing, your number of attempts: " + attempt + " #");
+        System.out.println("###################################################################");
     }
 }
