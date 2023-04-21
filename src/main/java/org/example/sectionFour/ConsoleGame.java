@@ -79,7 +79,7 @@ public class ConsoleGame {
                         critChance *= 2;
                         System.out.println("Draven critical chance increase: " + enemyAttackDamage);
                     }
-                    System.out.println("\t You strike the " + enemy + " for " + playerDamage + " damage");
+                    System.out.println("\t You hit " + enemy + " for " + playerDamage + " damage");
                     System.out.println("\t You took " + enemyAttackDamage + " damage");
 
                     if (player <= 1) {
