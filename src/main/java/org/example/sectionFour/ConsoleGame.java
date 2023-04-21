@@ -49,12 +49,13 @@ public class ConsoleGame {
             String enemy = enemies[random.nextInt(enemies.length)]; // random enemy on kill
             System.out.println("\t# " + enemy + " arrived to lane #\n");
 
+            String input;
             while (enemyMaxHealth > 0) { // iteration of attacks/player options
                 System.out.println("\tYour HP: " + player); //player health
                 System.out.println("\tYour Damage: " + playerDamage);
-                if(enemy.equals("Sion")||enemy.equals("Riven")){
+                if (enemy.equals("Sion") || enemy.equals("Riven")) {
                     enemyMaxHealth += (armour + magicResist);
-                } else if (enemy.equals("Draven")|| enemy.equals("Kled")) {
+                } else if (enemy.equals("Draven") || enemy.equals("Kled")) {
                     enemyAttackDamage += lifeSteal;
                 }
                 System.out.println("\t" + enemy + "'s HP: " + enemyMaxHealth); //enemy health
@@ -64,24 +65,24 @@ public class ConsoleGame {
                 System.out.println("\t2 recall");
                 System.out.println("\t3 Surrender!\n"); //player options
 
-                String input = scanner.nextLine();
-                if(input.equals("1")){
+                input = scanner.nextLine();
+                if (input.equals("1")) {
                     enemyMaxHealth -= playerDamage; //enemy loss
                     player -= enemyAttackDamage; //losing health
 
                     numAttacks++;
-                    if(numAttacks % 3 ==0 && recalled){
+                    if (numAttacks % 3 == 0 && recalled) {
                         playerDamage *= 2;
                         System.out.println("\tCRITICAL STRIKE");
                     }
-                    if(numAttacks % 3 == 0 && enemy.equals("Draven")){
+                    if (numAttacks % 3 == 0 && enemy.equals("Draven")) {
                         critChance *= 2;
                         System.out.println("Draven critical chance increase: " + enemyAttackDamage);
                     }
                     System.out.println("\t You strike the " + enemy + " for " + playerDamage + " damage");
                     System.out.println("\t You took " + enemyAttackDamage + " damage");
 
-                    if(player <= 1) {
+                    if (player <= 1) {
                         break;
                     }
                 } else if (input.equals("2")) {
@@ -91,44 +92,50 @@ public class ConsoleGame {
                     //enemy
                     enemyMaxHealth += enemyRecall;
                     enemyAttackDamage += (lifeSteal + critChance + item);
-                }else if(input.equals("3")){
+                } else if (input.equals("3")) {
                     System.out.println("Would you like to surrender? (Y/N)");
                     input = scanner.nextLine();
-                    if(!input.equalsIgnoreCase("N")){
+                    if (!input.equalsIgnoreCase("N")) {
                         System.out.println("DEFEAT");
                         running = false;
                         break;
-                    }else if (player < 1) {
+                    } else if (player < 1) {
                         System.out.println("TIP: recalling restores 30 HP in game");
-                    }else
+                    } else
                         System.out.println("Continue on");
                 }
-                System.out.println("------------------------------------------------------");
-                System.out.println("VICTORY");
-                System.out.println("------------------------------------------------------");
-                System.out.println(" # " + enemy + " was defeated! # ");
-                System.out.println(" # You have " + player + " HP left. # " );
-            }if (player < 1){
+            }
+            if (player < 1) {
                 System.out.println("DEFEAT");
                 break;
-            }
+            } else if (enemyMaxHealth < 1) {
+                    System.out.println("------------------------------------------------------");
+                    System.out.println("VICTORY");
+                    System.out.println("------------------------------------------------------");
+                    System.out.println(" # " + enemy + " was defeated! # ");
+                    System.out.println(" # You have " + player + " HP left. # ");
+                }
+
             System.out.println("Play Again?");
             System.out.println("1: Continue");
             System.out.println("2: Exit");
 
-            String input = scanner.nextLine();
-            while(!input.equals("1") && !input.equals("2")) {
+            input = scanner.nextLine();
+            while (!input.equals("1") && !input.equals("2")) {
                 System.out.println("Invalid command");
                 input = scanner.nextLine();
             }
-            if (input.equals("1")){
+            if (input.equals("1")) {
                 System.out.println("Prepare for battle");
                 attempt++;
+                minionsSpawned = false;
+                enemyMaxHealth = 75;
+                enemyAttackDamage = 25;
                 continue GAME;
-            }else {
+            } else {
                 System.out.println("Goodbye");
+                break;
             }
-            break;
         }
         System.out.println("###################################################################");
         System.out.println("# Thank you for playing, your number of attempts: " + attempt + " #");
