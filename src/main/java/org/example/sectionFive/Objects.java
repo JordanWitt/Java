@@ -14,7 +14,10 @@ public class Objects {
         Person jordan = new Person();
         jordan.firstName = "Jordan";
         jordan.lastName = "Witt";
+        Person joey = new Person();
+        joey.firstName = "Joey";
+        joey.lastName = "Ginel";
 
-        System.out.println(jordan.greeting());
+        System.out.println(jordan.greeting() + " " + joey.greeting());
     }
 }
