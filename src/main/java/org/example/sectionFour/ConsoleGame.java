@@ -103,16 +103,15 @@ public class ConsoleGame {
                     }else
                         System.out.println("Continue on");
                 }
+                System.out.println("------------------------------------------------------");
+                System.out.println("VICTORY");
+                System.out.println("------------------------------------------------------");
+                System.out.println(" # " + enemy + " was defeated! # ");
+                System.out.println(" # You have " + player + " HP left. # " );
             }if (player < 1){
                 System.out.println("DEFEAT");
                 break;
             }
-            System.out.println("------------------------------------------------------");
-            System.out.println(" # " + enemy + " was defeated! # ");
-            System.out.println(" # You have " + player + " HP left. # " );
-
-            System.out.println("------------------------------------------------------");
-            System.out.println("VICTORY");
             System.out.println("Play Again?");
             System.out.println("1: Continue");
             System.out.println("2: Exit");
