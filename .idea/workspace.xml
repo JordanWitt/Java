@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/Objects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/DiceRoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/DiceRoll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +46,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.DiceRoll">
-    <configuration name="BasicArithmetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.BasicArithmetic" />
+  <component name="RunManager" selected="Application.Objects">
+    <configuration name="Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionOne.Arrays" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.sectionFour.*" />
+          <option name="PATTERN" value="org.example.sectionOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,12 +60,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.Bob" />
+    <configuration name="Casting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionOne.Casting" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.sectionFour.*" />
+          <option name="PATTERN" value="org.example.sectionOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.JavaMethods" />
+    <configuration name="Objects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionFive.Objects" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.sectionFour.*" />
+          <option name="PATTERN" value="org.example.sectionFive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Objects" />
+        <item itemvalue="Application.Casting" />
+        <item itemvalue="Application.Arrays" />
         <item itemvalue="Application.DiceRoll" />
         <item itemvalue="Application.ConsoleGame" />
-        <item itemvalue="Application.BasicArithmetic" />
-        <item itemvalue="Application.JavaMethods" />
-        <item itemvalue="Application.Bob" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +134,7 @@
       <workItem from="1679850146652" duration="673000" />
       <workItem from="1681686420670" duration="4208000" />
       <workItem from="1681741414568" duration="14000" />
-      <workItem from="1681746447985" duration="44979000" />
+      <workItem from="1681746447985" duration="46431000" />
     </task>
     <servers />
   </component>
