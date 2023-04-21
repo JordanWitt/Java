@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/ConsoleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/ConsoleGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/DiceRoll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFour/DiceRoll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ConsoleGame">
+  <component name="RunManager" selected="Application.DiceRoll">
     <configuration name="BasicArithmetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.BasicArithmetic" />
       <module name="Java" />
@@ -86,6 +86,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiceRoll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.DiceRoll" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.sectionFour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.JavaMethods" />
       <module name="Java" />
@@ -99,26 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.StringBasics" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.sectionFour.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DiceRoll" />
         <item itemvalue="Application.ConsoleGame" />
         <item itemvalue="Application.BasicArithmetic" />
         <item itemvalue="Application.JavaMethods" />
         <item itemvalue="Application.Bob" />
-        <item itemvalue="Application.StringBasics" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +134,7 @@
       <workItem from="1679850146652" duration="673000" />
       <workItem from="1681686420670" duration="4208000" />
       <workItem from="1681741414568" duration="14000" />
-      <workItem from="1681746447985" duration="42738000" />
+      <workItem from="1681746447985" duration="44979000" />
     </task>
     <servers />
   </component>
