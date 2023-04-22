@@ -44,7 +44,6 @@ public class ConsoleGame {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                minionsSpawned = true;
             }
             String enemy = enemies[random.nextInt(enemies.length)]; // random enemy on kill
             System.out.println("\t# " + enemy + " arrived to lane #\n");
