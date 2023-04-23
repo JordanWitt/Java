@@ -10,14 +10,16 @@ public class BasicArithmetic {
     }
     public static void recursionMethod(int x, int y){
         if(x * y <= 0){
-            System.out.println("Finished");
+            System.out.println("----one----");
             return;
         }
+        System.out.println("----two----");
         System.out.println(x + y);
         recursionMethod(x,y - 1);
+        System.out.println("Finished");
     }
     public static void main(String[] args) {
         System.out.println(arithmeticExpression(11, 5));
-        recursionMethod(12, 10);
+        recursionMethod(10, 20);
     }
 }
