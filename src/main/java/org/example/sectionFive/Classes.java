@@ -36,6 +36,13 @@ public class Classes {
             return false;
         }
     }
+    public String viewGrade(){
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        if(isStudent == true && input.equalsIgnoreCase("Y"))
+            return gradeAverageCheck();
+        return input;
+    }
 
         public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -57,9 +64,7 @@ public class Classes {
                 System.out.println("Sorry that name doesn't exist");
 
             System.out.println("Would you like to view your grade?\n (Y/N)");
-            input = scanner.nextLine();
-            if (input.equalsIgnoreCase("Y") && luke.isStudent || anakin.isStudent)
-                System.out.println(luke.gradeAverageCheck());
+            System.out.println(luke.viewGrade());
         }
     }
 }
