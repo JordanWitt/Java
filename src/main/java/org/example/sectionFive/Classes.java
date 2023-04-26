@@ -9,20 +9,20 @@ public class Classes {
         public String name;
         boolean isStudent;
 
-        public Student(String studentName, double studentGrade, boolean isStudent) {
-            this.grade = studentGrade;
-            this.name = studentName;
+        public Student(String name, double grade, boolean isStudent) {
+            this.grade = grade;
+            this.name = name;
             this.isStudent = isStudent;
         }
 
         public void gradeAverageCheck() {
-            if (grade == 92 || grade == 100)
+            if (grade >= 90)
                 System.out.println("You received an A");
-            else if (grade == 80 || grade == 91)
+            else if (grade >= 80)
                 System.out.println("You received a B");
-            else if (grade == 70 || grade == 79)
+            else if (grade >= 70)
                 System.out.println("You received a C");
-            else if (grade == 60 || grade == 69)
+            else if (grade >= 60)
                 System.out.println("You received a D");
             else
                 System.out.println("You received an F");
