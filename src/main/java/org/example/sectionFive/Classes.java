@@ -47,17 +47,19 @@ public class Classes {
 
             System.out.println("Welcome, Sign in to view your grade");
             String input = scanner.nextLine();
-            if (input.equalsIgnoreCase("luke skywalker") && luke.isStudent)
+            if (input.equalsIgnoreCase("luke skywalker") && luke.isStudent
+                    || input.equalsIgnoreCase("anakin skywalker") && anakin.isStudent)
                 System.out.println(luke.isStudentCheck());
-            else if (input.equalsIgnoreCase("anakin skywalker") && anakin.isStudent)
-                System.out.println(anakin.isStudentCheck());
-            else if (input.equalsIgnoreCase("yoda") && yoda.isStudent)
+            else if (input.equalsIgnoreCase("yoda") && yoda.isStudent
+                    || input.equalsIgnoreCase("ben kenobi") && obi.isStudent)
                 System.out.println(yoda.isStudentCheck());
-            else if(input.equalsIgnoreCase("ben kenobi") && obi.isStudent)
-                System.out.println(obi.isStudentCheck());
             else
                 System.out.println("Sorry that name doesn't exist");
-        }
 
+            System.out.println("Would you like to view your grade?\n (Y/N)");
+            input = scanner.nextLine();
+            if (input.equalsIgnoreCase("Y") && luke.isStudent || anakin.isStudent)
+                System.out.println(luke.gradeAverageCheck());
+        }
     }
 }
