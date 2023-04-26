@@ -15,33 +15,24 @@ public class Classes {
         this.isStudent = isStudent;
     }
     public String gradeAverageCheck(){
-        if(grade == 92 || grade == 100)
+        if (grade >= 92)
             System.out.println("You received an A");
-        else if (grade == 80 || grade == 91)
+        else if (grade >= 80)
             System.out.println("You received a B");
-        else if (grade == 71 || grade == 79)
+        else if (grade >= 71)
             System.out.println("You received a C");
-        else if (grade == 60 || grade == 70)
+        else if (grade >= 60)
             System.out.println("You received a D");
         else
             System.out.println("You received an F");
         return null;
     }
-    public boolean isStudentCheck(){
-        if (isStudent) {
-            System.out.println("Access Granted");
-            return true;
-        } else {
+    public void isStudentCheck(){
+        if (!isStudent) {
             System.out.println("Access Denied");
-            return false;
+        } else {
+            System.out.println("Access Granted");
         }
-    }
-    public String viewGrade(){
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        if(isStudent == true && input.equalsIgnoreCase("Y"))
-            return gradeAverageCheck();
-        return input;
     }
 
         public static void main(String[] args) {
@@ -54,17 +45,25 @@ public class Classes {
 
             System.out.println("Welcome, Sign in to view your grade");
             String input = scanner.nextLine();
-            if (input.equalsIgnoreCase("luke skywalker") && luke.isStudent
-                    || input.equalsIgnoreCase("anakin skywalker") && anakin.isStudent)
-                System.out.println(luke.isStudentCheck());
-            else if (input.equalsIgnoreCase("yoda") && yoda.isStudent
-                    || input.equalsIgnoreCase("ben kenobi") && obi.isStudent)
-                System.out.println(yoda.isStudentCheck());
+            if (input.equalsIgnoreCase("luke skywalker") && luke.isStudent)
+               luke.isStudentCheck();
+            else if (input.equalsIgnoreCase("anakin skywalker") && luke.isStudent)
+                anakin.isStudentCheck();
+            else if (input.equalsIgnoreCase("yoda") && yoda.isStudent)
+                yoda.isStudentCheck();
+            else if (input.equalsIgnoreCase("ben kenobi") && obi.isStudent)
+                obi.isStudentCheck();
             else
                 System.out.println("Sorry that name doesn't exist");
 
             System.out.println("Would you like to view your grade?\n (Y/N)");
-            System.out.println(luke.viewGrade());
+            input = scanner.nextLine();
+            if(input.equalsIgnoreCase("Y") && luke.isStudent)
+              luke.gradeAverageCheck();
+            else if (input.equalsIgnoreCase("Y") && anakin.isStudent)
+                anakin.gradeAverageCheck();
+            else
+                System.out.println("Sorry you don't have access");
         }
     }
 }
