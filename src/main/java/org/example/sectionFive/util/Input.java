@@ -33,4 +33,16 @@ public class Input {
         System.out.println("You entered " + intInput);
         return x;
     }
+    public double getTwoDouble(double min, double max){
+        System.out.println("Enter 2 decimal numbers");
+        intInput = scanner.nextInt();
+        System.out.println("You entered " + intInput);
+        return (min + max);
+    }
+    public double getDouble(int x){
+        System.out.println("Enter in a decimal number");
+        intInput = scanner.nextInt();
+        System.out.println("You entered " + intInput);
+        return x;
+    }
 }
