@@ -7,10 +7,13 @@ public class Input {
     String stringInput;
     int intInput;
 
-   private void getString(){
+   public void getString(){
+       System.out.println("Tell me something");
         stringInput = scanner.nextLine();
+       System.out.println("You entered " + stringInput);
     }
-    private boolean yesNo() {
+    public boolean yesNo() {
+        System.out.println("Enter (Y/N)");
         if (stringInput.equalsIgnoreCase("Y"))
             return true;
         else
@@ -18,16 +21,16 @@ public class Input {
         System.exit(0);
         return false;
     }
-    private int getTwoInt(int min, int max){
+    public int getTwoInt(int min, int max){
         System.out.println("Enter in two numbers");
         intInput = scanner.nextInt();
-        System.out.println(intInput);
+        System.out.println("You entered " + intInput);
         return (min + max);
     }
-    private int getInt(int x){
+    public int getInt(int x){
         System.out.println("Enter in a number");
         intInput = scanner.nextInt();
-        System.out.println(intInput);
+        System.out.println("You entered " + intInput);
         return x;
     }
 }
