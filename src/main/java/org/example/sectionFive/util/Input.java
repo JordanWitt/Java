@@ -4,45 +4,58 @@ import java.util.Scanner;
 
 public class Input {
     private final Scanner scanner = new Scanner(System.in);
-    String stringInput;
-    int intInput;
 
-   public void getString(){
-       System.out.println("Tell me something");
-        stringInput = scanner.nextLine();
-       System.out.println("You entered " + stringInput);
+    //STRING INPUT
+    public String getString() {
+        System.out.println("Enter something: ");
+        return scanner.nextLine();
     }
+
+    //BOOLEAN Y/N
     public boolean yesNo() {
-        System.out.println("Enter (Y/N)");
-        if (stringInput.equalsIgnoreCase("Y"))
+        System.out.println("Enter yes or no to continue: ");
+        String input = scanner.nextLine();
+        if (input.equalsIgnoreCase("Yes") || input.equalsIgnoreCase("y")) {
+            System.out.println("You entered: ");
             return true;
-        else
-            System.out.println("Exiting program");
-        System.exit(0);
-        return false;
+        } else if (input.equalsIgnoreCase("No") || input.equalsIgnoreCase("n")) {
+            System.out.println("You entered: ");
+        }return false;
     }
-    public int getTwoInt(int min, int max){
-        System.out.println("Enter in two numbers");
-        intInput = scanner.nextInt();
-        System.out.println("You entered " + intInput);
-        return (min + max);
+
+    //MAX MIN INT
+    public int getInt(int min, int max) {
+        System.out.printf("Enter a number between %d and %d", min, max);//error printing with println and print
+        int input = scanner.nextInt();
+        if (input > min && input < max) {
+            return input;
+        } else {
+            System.out.println("Sorry, that's not within range");
+        }
+        return input;
     }
-    public int getInt(int x){
-        System.out.println("Enter in a number");
-        intInput = scanner.nextInt();
-        System.out.println("You entered " + intInput);
-        return x;
+
+    //GET INT
+    public int getInt() {
+        System.out.println("Enter a number: ");
+        int input = scanner.nextInt();
+        return input;
     }
-    public double getTwoDouble(double min, double max){
-        System.out.println("Enter 2 decimal numbers");
-        intInput = scanner.nextInt();
-        System.out.println("You entered " + intInput);
-        return (min + max);
+
+    //GET DOUBLE MIN MAX
+    public double getDouble(int min, int max) {
+        System.out.printf("Enter a number between %d and %d: ", min, max);
+        double input = scanner.nextInt();
+        if (input > min && input < max) {
+            return input;
+        } else {
+            System.out.println("Sorry, that's not within range");
+        }
+        return input;
     }
-    public double getDouble(int x){
-        System.out.println("Enter in a decimal number");
-        intInput = scanner.nextInt();
-        System.out.println("You entered " + intInput);
-        return x;
+    //GET DOUBLE
+    public double getDouble(){
+        System.out.println("Enter a number: ");
+        return scanner.nextDouble();
     }
 }
