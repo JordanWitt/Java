@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/Arrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/ArraysExercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <recent name="org.example.sectionFive" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Arrays">
+  <component name="RunManager" selected="Application.ArraysExercises">
     <configuration name="Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionFive.Arrays" />
       <module name="Java" />
@@ -64,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicArithmetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFour.BasicArithmetic" />
+    <configuration name="ArraysExercises" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionFive.ArraysExercises" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.sectionFour.*" />
+          <option name="PATTERN" value="org.example.sectionFive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArraysExercises" />
         <item itemvalue="Application.Arrays" />
         <item itemvalue="Application.CircleApp" />
         <item itemvalue="Application.Classes$Student" />
         <item itemvalue="Application.Objects" />
-        <item itemvalue="Application.BasicArithmetic" />
       </list>
     </recent_temporary>
   </component>
