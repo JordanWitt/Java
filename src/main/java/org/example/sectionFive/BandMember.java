@@ -1,13 +1,24 @@
 package org.example.sectionFive;
 
 public class BandMember {
-    String[] members;
+    private final String name;
+    private final String role;
 
-    public String[] getMembers() {
-        return members;
+    public BandMember(String name, String role) {
+        this.name = name;
+        this.role = role;
     }
 
-    public void setMembers(String[] members) {
-        this.members = members;
+    public String getName() {
+        return name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    @Override
+    public String toString() {
+        return name + " - " + role;
     }
 }
