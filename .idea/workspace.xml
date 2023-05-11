@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74989d9d-9753-4bf9-b06f-b7e5ad62612a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/ServerNameGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/movies/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/movies/MovieApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sectionFive/movies/MoviesArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
       <recent name="org.example.sectionFive" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ServerNameGenerator">
+  <component name="RunManager" selected="Application.MovieApplication">
     <configuration name="Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.sectionFive.Arrays" />
       <module name="Java" />
@@ -91,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Classes$Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sectionFive.Classes$Student" />
+    <configuration name="MovieApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sectionFive.movies.MovieApplication" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.sectionFive.*" />
+          <option name="PATTERN" value="org.example.sectionFive.movies.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovieApplication" />
         <item itemvalue="Application.ServerNameGenerator" />
         <item itemvalue="Application.ArraysExercises" />
         <item itemvalue="Application.Arrays" />
         <item itemvalue="Application.CircleApp" />
-        <item itemvalue="Application.Classes$Student" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +142,7 @@
       <workItem from="1681686420670" duration="4208000" />
       <workItem from="1681741414568" duration="14000" />
       <workItem from="1681746447985" duration="74875000" />
+      <workItem from="1683829060610" duration="648000" />
     </task>
     <servers />
   </component>
